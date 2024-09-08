@@ -1,0 +1,26 @@
+﻿<#@ template debug="true" hostspecific="true" language="VB" #>
+<#@ output extension=".vb" #>
+<#@ import namespace="System.IO" #>
+<#@ assembly name="System.Data" #> 
+<#@ import namespace="System.Data.SqlClient" #>
+
+
+
+<#
+	dim AutoVersion as string = "1.0.0.0"
+	AutoVersion = String.Format("{0:yy}", Date.Now) & "." & String.Format("{0:MM}", Date.Now) & "." & String.Format("{0:dd}", Date.Now) & "." & String.Format("{0:hhmm}", Date.Now)
+	dim ConectionString As String = "Data Source=112.78.2.154;Initial Catalog=dnf66954_Beyond;UID=dnf66954_Beyond;Pwd=9036S?cck;TimeOut=30"
+	dim query as string = "UPDATE MISC SET VAL='" & AutoVersion & "' WHERE RECID=1;"	
+	Using sqlcon As New SqlConnection(ConectionString)
+            Dim sqlcom As SqlCommand = sqlcon.CreateCommand()
+            Try
+                sqlcon.Open()
+                sqlcom.CommandText = query               
+                sqlcom.ExecuteScalar
+            Catch ex As Exception                             
+            End Try
+    End Using	
+
+#>
+
+ 

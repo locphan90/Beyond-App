@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E79AFEA-A1D0-45D8-ADBC-E563E81E60DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Beyond_App.My.MyApplication</StartupObject>
+    <RootNamespace>Beyond_App</RootNamespace>
+    <AssemblyName>BeyondApp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BeyondApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BeyondApp.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>flight_30822.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Acc_ConfirmCustPayment.Designer.vb">
+      <DependentUpon>Acc_ConfirmCustPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_ConfirmCustPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acc_ConfirmSupPayment.Designer.vb">
+      <DependentUpon>Acc_ConfirmSupPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_ConfirmSupPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Acc_TopUp.Designer.vb">
+      <DependentUpon>Acc_TopUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Acc_TopUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyFileVersion.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AssemblyFileVersion.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDoiMatKhau.designer.vb">
+      <DependentUpon>FrmDoiMatKhau.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDoiMatKhau.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogIn.designer.vb">
+      <DependentUpon>FrmLogIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.designer.vb">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_CharterCode.Designer.vb">
+      <DependentUpon>Ticketing_CharterCode.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_CharterCode.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_Deadline.Designer.vb">
+      <DependentUpon>Ticketing_Deadline.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_Deadline.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_Group.Designer.vb">
+      <DependentUpon>Ticketing_Group.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_Group.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_SupplierPayment.Designer.vb">
+      <DependentUpon>Ticketing_SupplierPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_SupplierPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUserRight.designer.vb">
+      <DependentUpon>FrmUserRight.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUserRight.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="objStaff.vb" />
+    <Compile Include="Ticketing_CharterBuy.Designer.vb">
+      <DependentUpon>Ticketing_CharterBuy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_CharterBuy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_CharterSell.Designer.vb">
+      <DependentUpon>Ticketing_CharterSell.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_CharterSell.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_Customer.Designer.vb">
+      <DependentUpon>Ticketing_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_CustPayment.Designer.vb">
+      <DependentUpon>Ticketing_CustPayment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_CustPayment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_LandSetting.Designer.vb">
+      <DependentUpon>Ticketing_LandSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_LandSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_Supplier.Designer.vb">
+      <DependentUpon>Ticketing_Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_Supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticketing_AirRail.Designer.vb">
+      <DependentUpon>Ticketing_AirRail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ticketing_AirRail.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubAndFuntions.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Acc_ConfirmCustPayment.resx">
+      <DependentUpon>Acc_ConfirmCustPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acc_ConfirmSupPayment.resx">
+      <DependentUpon>Acc_ConfirmSupPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Acc_TopUp.resx">
+      <DependentUpon>Acc_TopUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReport.resx">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDoiMatKhau.resx">
+      <DependentUpon>FrmDoiMatKhau.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogIn.resx">
+      <DependentUpon>FrmLogIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_CharterCode.resx">
+      <DependentUpon>Ticketing_CharterCode.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_Deadline.resx">
+      <DependentUpon>Ticketing_Deadline.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_Group.resx">
+      <DependentUpon>Ticketing_Group.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_SupplierPayment.resx">
+      <DependentUpon>Ticketing_SupplierPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUserRight.resx">
+      <DependentUpon>FrmUserRight.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_CharterBuy.resx">
+      <DependentUpon>Ticketing_CharterBuy.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_CharterSell.resx">
+      <DependentUpon>Ticketing_CharterSell.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_Customer.resx">
+      <DependentUpon>Ticketing_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_CustPayment.resx">
+      <DependentUpon>Ticketing_CustPayment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_LandSetting.resx">
+      <DependentUpon>Ticketing_LandSetting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_Supplier.resx">
+      <DependentUpon>Ticketing_Supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticketing_AirRail.resx">
+      <DependentUpon>Ticketing_AirRail.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AssemblyFileVersion.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>AssemblyFileVersion.vb</LastGenOutput>
+    </Content>
+    <Content Include="flight_30822.ico" />
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
